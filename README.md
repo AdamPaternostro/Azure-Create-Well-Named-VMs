@@ -11,3 +11,7 @@ You can modify this script to comment out the VNET creation and just use the VM 
 
 ## Why Azure CLI 2.0
 Why this versus an ARM template: In my opinion this is easier to read and debug that a large ARM template.  It is not better at running in parallel.  So, the ARM template is technically better, but this allows you to easily add items and make comments.
+
+## Notes
+You should change the ssh password or use a ssh key (perferred).
+https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az_vm_create 
