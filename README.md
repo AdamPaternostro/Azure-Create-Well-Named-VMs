@@ -3,6 +3,9 @@ Create a well named VNET, Subnet, NSG, Azure VMs with NICs cards and attached da
 
 This will create a VM that sorts cleanly in the Azure portal.  You avoid getting a bunch of default names that are not "clean".
 
+## How to use
+You can cut and paste this code directly in the Azure Bash Portal prompt, no need to install the Azure 2.0 CLI.
 You can modifiy this script to comment out the VNET creatation and just use the VM create part as well.
 
-You can cut and paste this code directly in the Azure Bash Portal prompt, no need to install the Azure 2.0 CLI.
+## Why Azure CLI 2.0
+Why this versus an ARM template: In my opinion this is easier to read and debug that a large ARM template.  It is not better at running in parallel.  So, the ARM template is technically better, but this allows you to easily add items and make comments.
